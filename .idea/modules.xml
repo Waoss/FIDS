@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util.fids.iml" filepath="$PROJECT_DIR$/.idea/modules/util.fids.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../FunctionInterfacesDontStop/.idea/modules/util.fids_main.iml" filepath="$PROJECT_DIR$/../FunctionInterfacesDontStop/.idea/modules/util.fids_main.iml" group="util.fids" />
+      <module fileurl="file://$PROJECT_DIR$/../FunctionInterfacesDontStop/.idea/modules/util.fids_test.iml" filepath="$PROJECT_DIR$/../FunctionInterfacesDontStop/.idea/modules/util.fids_test.iml" group="util.fids" />
+    </modules>
+  </component>
+</project>
