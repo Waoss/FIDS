@@ -9,31 +9,48 @@ package com.waoss.util.fids;
  *
  * For example,
  * {@code
- *      Pair<
+ *      Pair<String, Integer> pair = new Pair<>("Hello World", 15);
+ *      System.out.println(pair.getFirst());
+ *      System.out.println(pair.getSecond());
  * }
  */
 public class Pair<F,S> {
 
-    protected F first;
-    protected S second;
+    private F first;
+    private S second;
 
     public Pair(F first, S second) {
         this.first = first;
         this.second = second;
     }
 
+    public Pair() {
+    }
+
+    /**
+     * @return The first part of the Pair
+     */
     public F getFirst() {
         return first;
     }
 
+    /**
+     * @param first The part to be set
+     */
     public void setFirst(F first) {
         this.first = first;
     }
 
+    /**
+     * @return The second part of the Pair
+     */
     public S getSecond() {
         return second;
     }
 
+    /**
+     * @param second The second part to be set
+     */
     public void setSecond(S second) {
         this.second = second;
     }
