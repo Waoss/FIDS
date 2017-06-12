@@ -17,56 +17,55 @@ package com.waoss.util.fids;
 
 /**
  * Represents a Pair of two arguments. A data structure capable of storing
- * a second value for a first value\
+ * a second and third value for a first value
+ * For example,
+ * {@code
+ * Triplet<String, Integer, Boolean> tri = new Triplet<>("Hello World", 15, true);
+ * System.out.println(tri.getFirst());
+ * System.out.println(tri.getSecond());
+ * System.out.println(tri.getThird());
+ * }
  *
  * @param <F> The first value's type
  * @param <S> The second value's type
- *
- * For example,
- * {@code
- *      Pair<String, Integer> pair = new Pair<>("Hello World", 15);
- *      System.out.println(pair.getFirst());
- *      System.out.println(pair.getSecond());
- * }
+ * @param <T> The third value's type
  */
-public class Pair<F,S> {
+public class Triplet<F, S, T> {
 
     private F first;
     private S second;
+    private T third;
 
-    public Pair(F first, S second) {
+    public Triplet() {
+    }
+
+    public Triplet(F first, S second, T third) {
         this.first = first;
         this.second = second;
+        this.third = third;
     }
 
-    public Pair() {
-    }
-
-    /**
-     * @return The first part of the Pair
-     */
     public F getFirst() {
         return first;
     }
 
-    /**
-     * @param first The part to be set
-     */
     public void setFirst(F first) {
         this.first = first;
     }
 
-    /**
-     * @return The second part of the Pair
-     */
     public S getSecond() {
         return second;
     }
 
-    /**
-     * @param second The second part to be set
-     */
     public void setSecond(S second) {
         this.second = second;
+    }
+
+    public T getThird() {
+        return third;
+    }
+
+    public void setThird(T third) {
+        this.third = third;
     }
 }
