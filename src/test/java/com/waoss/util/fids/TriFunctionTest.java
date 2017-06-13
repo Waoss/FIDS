@@ -13,21 +13,17 @@
  * 3. Disclose source
  * 4. Same license
  * With the limitations of no liability or warranty.
+ * For more information, see LICENSE.MD
  */
 
 package com.waoss.util.fids;
 
 import org.junit.Test;
 
-/**
- * Created by RAHUL on 13-06-2017.
- */
 public class TriFunctionTest {
     @Test
     public void apply() throws Exception {
-        TriFunction<Integer, Integer, Integer, Integer> triFunction = (t, u, v) -> {
-            return t + u + v;
-        };
+        TriFunction<Integer, Integer, Integer, Integer> triFunction = (t, u, v) -> t + u + v;
         System.out.println(triFunction.apply(5, 6, 7));
     }
 
