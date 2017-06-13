@@ -20,9 +20,6 @@ package com.waoss.util.fids;
 
 import org.junit.Test;
 
-/**
- * Created by RAHUL on 13-06-2017.
- */
 public class FIDSTest {
     @Test
     public void main() throws Exception {
