@@ -36,6 +36,8 @@ import java.util.function.Consumer;
  * @param <S> the type of the fourth argument to the operation
  * @author Rahul Chhabra
  * @see Consumer
+ * @see java.util.function.BiConsumer
+ * @see TriConsumer
  */
 @FunctionalInterface
 public interface QuadriConsumer<T, U, V, S> {

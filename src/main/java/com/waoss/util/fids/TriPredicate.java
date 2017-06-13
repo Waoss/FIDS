@@ -90,6 +90,6 @@ public interface TriPredicate<T, U, V> {
      * @return
      */
     default TriPredicate<T, U, V> or(TriPredicate<? super T, ? super U, ? super V> other) {
-        return (t, u, v) -> this.test(t, u, v) || !other.test(t, u, v);
+        return (t, u, v) -> this.test(t, u, v) || other.test(t, u, v);
     }
 }

@@ -30,9 +30,7 @@ public class QuadriFunctionTest {
     @Test
     public void apply() throws Exception {
         QuadriFunction<String, String, String, String, String> stringConcatFunction = (t, u, v, s) -> t.concat(u.concat(v.concat(s)));
-        QuadriFunction<Integer, Integer, Integer, Integer, Integer> intMaxFunction = (t, u, v, s) -> {
-            return max(t, max(u, max(v, s)));
-        };
+        QuadriFunction<Integer, Integer, Integer, Integer, Integer> intMaxFunction = (t, u, v, s) -> max(t, max(u, max(v, s)));
         System.out.println(stringConcatFunction.apply("Hello ", "World ", "Is ", "Shit!"));
         System.out.println(intMaxFunction.apply(5, 6, 7, 8));
     }
