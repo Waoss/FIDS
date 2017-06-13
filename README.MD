@@ -26,6 +26,10 @@ Or, if you do not have Gradle
 ```
 $ ./gradlew build
 ```
+You can also build via Maven,
+```
+$ mvn install
+```
 ## Documentation
 The Javadoc can be found https://waoss.github.io/FIDS/javadoc/
 ## Examples
