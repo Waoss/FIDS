@@ -19,14 +19,16 @@ package com.waoss.util.fids;
 
 import org.junit.Test;
 
-public class TriConsumerTest {
+/**
+ * Created by RAHUL on 13-06-2017.
+ */
+public class TriFunctionTest {
     @Test
-    public void accept() throws Exception {
-        TriConsumer<Integer, Integer, Integer> integerIntegerIntegerTriConsumer = (integer, integer2, integer3) -> {
-            //doesn't really do anything
-            System.out.println(integer);
-            System.out.println(integer2);
-            System.out.println(integer3);
+    public void apply() throws Exception {
+        TriFunction<Integer, Integer, Integer, Integer> triFunction = (t, u, v) -> {
+            return t + u + v;
         };
+        System.out.println(triFunction.apply(5, 6, 7));
     }
+
 }

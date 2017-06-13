@@ -1,5 +1,7 @@
 /*
- * Licensed under the GNU General Public License 3.0.Copyright Waoss and its affliates.This library ,thus permits :
+ * Licensed under the GNU General Public License 3.0.
+ * Copyright Waoss and its affliates.
+ * This library ,hereby permits :
  * 1. Commercial Use
  * 2. Modification
  * 3. Distribution
@@ -10,7 +12,7 @@
  * 2. State changes
  * 3. Disclose source
  * 4. Same license
- * With the following limitations of no liability or warranty.
+ * With the limitations of no liability or warranty.
  */
 
 package com.waoss.util.fids;
