@@ -13,6 +13,7 @@
  * 3. Disclose source
  * 4. Same license
  * With the limitations of no liability or warranty.
+ * For more information, see LICENSE.MD
  */
 
 package com.waoss.util.fids;

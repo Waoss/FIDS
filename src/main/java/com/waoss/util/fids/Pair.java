@@ -13,6 +13,7 @@
  * 3. Disclose source
  * 4. Same license
  * With the limitations of no liability or warranty.
+ * For more information, see LICENSE.MD
  */
 
 package com.waoss.util.fids;
@@ -30,6 +31,8 @@ package com.waoss.util.fids;
  *      System.out.println(pair.getFirst());
  *      System.out.println(pair.getSecond());
  * }
+ *
+ * @author Rahul Chhabra
  */
 public class Pair<F,S> {
 

@@ -13,6 +13,7 @@
  * 3. Disclose source
  * 4. Same license
  * With the limitations of no liability or warranty.
+ * For more information, see LICENSE.MD
  */
 
 package com.waoss.util.fids;
@@ -31,6 +32,7 @@ package com.waoss.util.fids;
  * @param <F> The first value's type
  * @param <S> The second value's type
  * @param <T> The third value's type
+ * @author Rahul Chhabra
  */
 public class Triplet<F, S, T> {
 
