@@ -26,7 +26,6 @@ import java.util.function.Consumer;
  * result.  This is the three-arity specialization of {@link Consumer}.
  * Unlike most other functional interfaces, {@code QuadriConsumer} is expected
  * to operate via side-effects.
- * <p>
  * <p>This is a functional interface
  * whose functional method is {@link #accept(Object, Object, Object, Object)}.</p>
  *
