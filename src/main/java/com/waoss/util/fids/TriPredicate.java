@@ -24,9 +24,8 @@ import java.util.Objects;
 /**
  * Represents a predicate (boolean-valued function) of three arguments.  This is
  * the three-arity specialization of {@link java.util.function.Predicate}.
- * <p>
  * <p>This is a functional interface
- * whose functional method is {@link #test(Object, Object, Object)}.
+ * whose functional method is {@link #test(Object, Object, Object)}.</p>
  *
  * @param <T> the type of the first argument to the predicate
  * @param <U> the type of the second argument to the predicate
@@ -81,12 +80,11 @@ public interface TriPredicate<T, U, V> {
      * OR of this predicate and another.  When evaluating the composed
      * predicate, if this predicate is {@code true}, then the {@code other}
      * predicate is not evaluated.</p>
-     * <p>
      * <p>Any exceptions thrown during evaluation of either predicate are relayed
      * to the caller; if evaluation of this predicate throws an exception, the
      * {@code other} predicate will not be evaluated.</p>
      *
-     * @param other
+     * @param other A predicate that will be logicall ORed.
      * @return The composed predicate
      */
     default TriPredicate<T, U, V> or(TriPredicate<? super T, ? super U, ? super V> other) {

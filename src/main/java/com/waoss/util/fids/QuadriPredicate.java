@@ -20,6 +20,17 @@ package com.waoss.util.fids;
 
 import java.util.Objects;
 
+/**
+ * Represents a predicate (boolean-valued function) of three arguments.  This is
+ * the three-arity specialization of {@link java.util.function.Predicate}.
+ * <p>This is a functional interface
+ * whose functional method is {@link #test(Object, Object, Object, Object)}.</p>
+ *
+ * @param <T> the type of the first argument to the predicate
+ * @param <U> the type of the second argument to the predicate
+ * @param <V> the type of the third argument to the predicate
+ * @see java.util.function.Predicate
+ */
 public interface QuadriPredicate<T, U, V, S> {
 
     /**
@@ -69,12 +80,11 @@ public interface QuadriPredicate<T, U, V, S> {
      * OR of this predicate and another.  When evaluating the composed
      * predicate, if this predicate is {@code true}, then the {@code other}
      * predicate is not evaluated.</p>
-     * <p>
      * <p>Any exceptions thrown during evaluation of either predicate are relayed
      * to the caller; if evaluation of this predicate throws an exception, the
      * {@code other} predicate will not be evaluated.</p>
      *
-     * @param other
+     * @param other The logically ORed predicate.
      * @return The composed predicate
      */
     default QuadriPredicate<T, U, V, S> or(QuadriPredicate<? super T, ? super U, ? super V, ? super S> other) {
