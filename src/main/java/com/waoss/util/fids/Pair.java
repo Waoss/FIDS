@@ -23,9 +23,9 @@ package com.waoss.util.fids;
  * a second value for a first value.
  * For example,
  * {@code
- *      Pair<String, Integer> pair = new Pair<>("Hello World", 15);
- *      System.out.println(pair.getFirst());
- *      System.out.println(pair.getSecond());
+ *      <br/>Pair<String, Integer> pair = new Pair<>("Hello World", 15);
+ *      <br/>System.out.println(pair.getFirst());
+ *      <br/>System.out.println(pair.getSecond());
  * }
  *
  * @param <F> The first value's type

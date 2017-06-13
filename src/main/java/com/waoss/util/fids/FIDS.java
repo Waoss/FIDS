@@ -27,7 +27,7 @@ public class FIDS {
     public static void main(String[] args) {
         System.out.println(
                 "FIDS\n" +
-                        "Functional Interfaces Don't Stop\n" +
+                        "\t\tFunctional Interfaces Don't Stop\n" +
                         "This library is intended to provide utility functional interfaces similar to the ones in <code>java.util.function</code>.\n" +
                         "It also contains a few classes that are just utility but not really *functional interfaces*\n" +
                         "At present it contains the following :\n" +
@@ -35,11 +35,12 @@ public class FIDS {
                         "* TriConsumer\n" +
                         "* Triplet\n" +
                         "* Pair\n" +
-                        "Building\n" +
+                        "\t\tBuilding\n" +
                         "Build it like any other gradle project, if you have gradle:\n" +
                         "$ gradle build\n" +
                         "Or, if you do not have Gradle\n" +
                         "$ ./gradlew build\n" +
-                        "Have fun!:)");
+                        "\t\tDocumentation\n" +
+                        "The Javadoc can be found https://waoss.github.io/FIDS/javadoc/");
     }
 }

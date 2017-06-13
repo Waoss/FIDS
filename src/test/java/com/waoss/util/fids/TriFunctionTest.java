@@ -21,10 +21,12 @@ package com.waoss.util.fids;
 import org.junit.Test;
 
 public class TriFunctionTest {
+
     @Test
     public void apply() throws Exception {
         TriFunction<Integer, Integer, Integer, Integer> triFunction = (t, u, v) -> t + u + v;
         System.out.println(triFunction.apply(5, 6, 7));
+        TriFunction<Double, Double, Double, Double> doubleTriFunction = (t, u, v) -> (t + u) * v;
+        System.out.println(doubleTriFunction.apply(5.0D, 6.0D, 7.0D));
     }
-
 }
