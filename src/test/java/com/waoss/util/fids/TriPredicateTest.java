@@ -43,9 +43,7 @@ public class TriPredicateTest {
 
     @Test
     public void or() throws Exception {
-        assertEquals(true, triPredicate.or((a, b, c) -> {
-            return a == b && b == c;
-        }).test(6, 6, 6));
+        assertEquals(true, triPredicate.or((a, b, c) -> a == b && b == c).test(6, 6, 6));
     }
 
 }
