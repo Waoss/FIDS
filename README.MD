@@ -17,4 +17,4 @@ Or, if you do not have Gradle
 $ ./gradlew build
 ```
 ## Documentation
-The Javadoc can be found (here)[https://waoss.github.io/FIDS/javadoc/].
+The Javadoc can be found https://waoss.github.io/FIDS/javadoc/
