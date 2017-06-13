@@ -6,6 +6,8 @@ At present it contains the following :
 * TriFunction
 * TriConsumer
 * Triplet
+* QuadriFunction
+* QuadriConsumer
 * Pair
 ## Building
 Build it like any other gradle project, if you have gradle:
