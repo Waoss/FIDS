@@ -46,6 +46,7 @@ public class Pair<F,S> {
     }
 
     /**
+     * Returns the first part of the Pair
      * @return The first part of the Pair
      */
     public F getFirst() {
@@ -53,6 +54,7 @@ public class Pair<F,S> {
     }
 
     /**
+     * Sets the first part of the pair
      * @param first The part to be set
      */
     public void setFirst(F first) {
@@ -60,6 +62,7 @@ public class Pair<F,S> {
     }
 
     /**
+     * Returns the second part of the Pair
      * @return The second part of the Pair
      */
     public S getSecond() {
@@ -67,6 +70,7 @@ public class Pair<F,S> {
     }
 
     /**
+     * Sets the second part of the Pair
      * @param second The second part to be set
      */
     public void setSecond(S second) {
