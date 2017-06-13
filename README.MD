@@ -7,3 +7,12 @@ At present it contains the following :
 * TriConsumer
 * Triplet
 * Pair
+## Building
+Build it like any other gradle project, if you have gradle:
+```
+$ gradle build
+```
+Or, if you do not have Gradle
+```
+$ ./gradlew build
+```
