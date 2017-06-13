@@ -5,9 +5,11 @@ It also contains a few classes that are just utility but not really *functional 
 At present it contains the following :
 * TriFunction
 * TriConsumer
+* TriPredicate
 * Triplet
 * QuadriFunction
 * QuadriConsumer
+* QuadriPredicate
 * Pair
 ## Building
 Build it like any other gradle project, if you have gradle:
