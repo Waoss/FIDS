@@ -20,3 +20,5 @@ $ ./gradlew build
 ```
 ## Documentation
 The Javadoc can be found https://waoss.github.io/FIDS/javadoc/
+## Examples
+See the "test" sources in src/test/java or goto https://waoss.github.io/FIDS/examples/com/waoss/util/fids/index.html
