@@ -72,7 +72,7 @@ public interface QuadriPredicate<T, U, V, S> {
      * predicate
      */
     default QuadriPredicate<T, U, V, S> negate() {
-        return (t, u, v, s) -> this.test(t, u, v, s);
+        return (t, u, v, s) -> !this.test(t, u, v, s);
     }
 
     /**
