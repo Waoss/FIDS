@@ -20,11 +20,7 @@ package com.waoss.util.fids;
 
 /**
  * Represents a Pair of two arguments. A data structure capable of storing
- * a second value for a first value\
- *
- * @param <F> The first value's type
- * @param <S> The second value's type
- *
+ * a second value for a first value.
  * For example,
  * {@code
  *      Pair<String, Integer> pair = new Pair<>("Hello World", 15);
@@ -32,6 +28,8 @@ package com.waoss.util.fids;
  *      System.out.println(pair.getSecond());
  * }
  *
+ * @param <F> The first value's type
+ * @param <S> The second value's type
  * @author Rahul Chhabra
  */
 public class Pair<F,S> {
