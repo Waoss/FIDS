@@ -22,6 +22,8 @@ version '1.0'
 apply plugin: 'java'
 apply plugin: 'application'
 
+mainClassName = 'com.waoss.util.fids.FIDS'
+
 sourceCompatibility = 1.8
 
 repositories {
