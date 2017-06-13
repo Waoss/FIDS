@@ -11,6 +11,12 @@ At present it contains the following :
 * QuadriConsumer
 * QuadriPredicate
 * Pair
+## Releases
+Goto releases and see the latest release, or download it from [here](https://github.com/Waoss/FIDS/releases/download/1.1/util.fids-1.1.jar).
+## What has been done?
+- [x] Tri Consumers, Functions, Predicates
+- [x] Quadri Consumers, Functions, Predicates
+- [ ] Penta, Hexa, Septa, Octa, Nona, or Deca
 ## Building
 Build it like any other gradle project, if you have gradle:
 ```
@@ -24,5 +30,3 @@ $ ./gradlew build
 The Javadoc can be found https://waoss.github.io/FIDS/javadoc/
 ## Examples
 See the "test" sources in src/test/java or [here](https://waoss.github.io/FIDS/examples/com/waoss/util/fids/index.html).
-## Releases
-Goto releases and see the latest release, or download it from [here](https://github.com/Waoss/FIDS/releases/download/1.1/util.fids-1.1.jar).
