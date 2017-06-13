@@ -22,17 +22,61 @@ import java.util.Objects;
 
 public interface QuadriPredicate<T, U, V, S> {
 
+    /**
+     * Evaluates this predicate on the given arguments.
+     *
+     * @param t The first input argument
+     * @param u The second input argument
+     * @param v The third input argument
+     * @param s The fourth input argumnet
+     * @return {@code true} if the arguments match the predicate, else no
+     */
     boolean test(T t, U u, V v, S s);
 
+    /**
+     * <p> Returns a composed predicate that represents a short-circuiting logical
+     * AND of this predicate and another.  When evaluating the composed
+     * predicate, if this predicate is {@code false}, then the {@code other}
+     * predicate is not evaluated.</p>
+     * <p>Any exceptions thrown during evaluation of either predicate are relayed
+     * to the caller; if evaluation of this predicate throws an exception, the
+     * {@code other} predicate will not be evaluated.</p>
+     *
+     * @param other a predicate that will be logically-ANDed with this
+     *              predicate
+     * @return a composed predicate that represents the short-circuiting logical
+     * and of this predicate and the {@code other} predicate
+     * @throws NullPointerException if {@code other} is null
+     */
     default QuadriPredicate<T, U, V, S> and(QuadriPredicate<? super T, ? super U, ? super V, ? super S> other) {
         Objects.requireNonNull(other);
         return (t, u, v, s) -> this.test(t, u, v, s) && other.test(t, u, v, s);
     }
 
+    /**
+     * Returns a predicate that represents the logical negation of this
+     * predicate.
+     *
+     * @return a predicate that represents the logical negation of this
+     * predicate
+     */
     default QuadriPredicate<T, U, V, S> negate() {
         return (t, u, v, s) -> this.test(t, u, v, s);
     }
 
+    /**
+     * <p>Returns a composed predicate that represents a short-circuiting logical
+     * OR of this predicate and another.  When evaluating the composed
+     * predicate, if this predicate is {@code true}, then the {@code other}
+     * predicate is not evaluated.</p>
+     * <p>
+     * <p>Any exceptions thrown during evaluation of either predicate are relayed
+     * to the caller; if evaluation of this predicate throws an exception, the
+     * {@code other} predicate will not be evaluated.</p>
+     *
+     * @param other
+     * @return The composed predicate
+     */
     default QuadriPredicate<T, U, V, S> or(QuadriPredicate<? super T, ? super U, ? super V, ? super S> other) {
         return (t, u, v, s) -> this.test(t, u, v, s) || other.test(t, u, v, s);
     }

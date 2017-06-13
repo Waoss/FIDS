@@ -87,7 +87,7 @@ public interface TriPredicate<T, U, V> {
      * {@code other} predicate will not be evaluated.</p>
      *
      * @param other
-     * @return
+     * @return The composed predicate
      */
     default TriPredicate<T, U, V> or(TriPredicate<? super T, ? super U, ? super V> other) {
         return (t, u, v) -> this.test(t, u, v) || other.test(t, u, v);
