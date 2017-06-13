@@ -1,3 +1,0 @@
-<component name="DependencyValidationManager">
-  <scope name="Copyright" pattern="src[util.fids_main]:com.waoss.util.fids.*||test[util.fids_test]:com.waoss.util.fids.*||test[util.fids_test]:com.waoss.util.fids..*||src[util.fids_main]:com.waoss.util.fids..*" />
-</component>
