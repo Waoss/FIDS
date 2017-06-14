@@ -19,6 +19,9 @@ public class FIDSTest {
         FIDS.main(new String[]{
                 "asdasdasdsadasd"
         });
+        FIDS.main(new String[]{
+                "-license"
+        });
     }
 
 }
