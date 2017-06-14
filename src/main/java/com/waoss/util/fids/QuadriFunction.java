@@ -1,19 +1,12 @@
 /*
- * Licensed under the GNU General Public License 3.0.
- * Copyright Waoss and its affliates.
- * This library ,hereby permits :
- * 1. Commercial Use
- * 2. Modification
- * 3. Distribution
- * 4. Patent Use
- * 5. Private Use
- * Under the following conditions :
- * 1. License and copyright notice
- * 2. State changes
- * 3. Disclose source
- * 4. Same license
- * With the limitations of no liability or warranty.
- * For more information, see LICENSE.MD
+ * Copyright (c) Waoss
+ *
+ * Mail me at rahul29112002@gmail.com for any queries :)
+ *
+ * This is free software licensed under the GNU General Public License.This license allows one to modify it on their will and also embed it or distribute it along with their own software.
+ *
+ * It is distributed in the hope that it shall be useful to whomsoever receives it,but does not provide ANY warranty or liability,not even the gurantee that the software will work in your certain usage.
+ * You receive a copy of the GNU General Public License version 3.0 when you download this software.See LICENSE.MD for more details.
  */
 
 package com.waoss.util.fids;
